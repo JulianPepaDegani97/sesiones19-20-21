@@ -1,23 +1,20 @@
-import logo from './logo.svg';
-import './App.css';
+import GreetingF from "./pure/GreetingF";
+import TaskList from "./components/TaskList";
+import ComponenteContexto from "./hooks/Ejemplo3";
+import GreetingStyled from "./pure/GreetingStyled";
+import Father from "./components/Father";
+import "./app.css"
+import OptionalRender from "./pure/OptionalRender";
+import LoginFormik from "./pure/form/LoginFormik";
+import RegisterFormik from "./pure/form/RegisterFormik";
+
+
 
 function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div >
+      <TaskList />
+
     </div>
   );
 }
