@@ -24,7 +24,8 @@ const LoginFormik = () => {
                 onSubmit={async (values) => {
                     await new Promise((r) => setTimeout(r, 500));
                     alert(JSON.stringify(values, null, 2));
-                    localStorage.setItem('credentials', values)
+                    await localStorage.setItem('credentials', values)
+
                 }}
             >
                 {({ values, touched, errors, isSubmitting, handleChange, handleBlur }) => (

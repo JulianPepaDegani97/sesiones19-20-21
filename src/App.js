@@ -7,13 +7,14 @@ import "./app.css"
 import OptionalRender from "./pure/OptionalRender";
 import LoginFormik from "./pure/form/LoginFormik";
 import RegisterFormik from "./pure/form/RegisterFormik";
+import AppRoutingFinal from "./AppRoutingFinal";
 
 
 
 function App() {
   return (
     <div >
-      <TaskList />
+      <AppRoutingFinal />
 
     </div>
   );
